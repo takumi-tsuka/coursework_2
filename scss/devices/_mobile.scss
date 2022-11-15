@@ -1,0 +1,85 @@
+@media(min-width: $minWidthMob){
+    nav{
+
+        > section:first-child{
+            @include flexContent(column,center,center,1vh,0);
+            background-color: $defaultOrange;
+            padding-top: 5%;
+            padding-bottom: 3%;
+            font-size: $fontSizePMob;
+        }
+        article{
+            @include flexElement(row,5vh,0);
+
+            >a{
+                color:white;
+                text-decoration: none;
+                font-weight: 300;
+            }
+
+            i{
+                padding-right: 2vh;
+            }
+
+        }
+        aside{
+            width: 100%;
+            @include flexContent(row,center,center,0,5vh);
+
+            a{
+                border: 1px solid white;
+                border-radius: 50%;
+                height: 5vh;
+                width: 5vh;
+                @include flexContent;
+                text-decoration: none;
+            }
+
+            i{
+                color: white;
+                font-size: 12px;
+            }
+
+        }
+        > section:last-child{
+            position: relative;
+            padding: 3%;
+            @include flexContent(row,space-between);
+
+            h1{
+                font-size: $fontSizeH1Mob;
+            }
+
+            >ul{
+                display: none;
+            }
+        }
+        details{
+            position: absolute;
+            width: 94%;
+            text-align: right;
+
+            >ul{
+                position: absolute;
+                width: 100%;
+                text-align: left;
+                background-color: white;
+                background-color: $defaultOrange;
+                margin-top: 3%;
+            }
+            li{
+                padding: 2%;
+                list-style-type: none;
+                border-bottom: 1px solid sienna;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                font-weight: 300;
+            }
+        }
+        summary{
+            font-size: 32px;
+        }
+    }
+}
