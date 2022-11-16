@@ -212,7 +212,132 @@
         aside{
             display: none;
         }
+    }
 
+    .about{
+        @include flexDir(column,0,10vh);
+        padding-top: 13vh;
+        padding-bottom: 10vh;
+        align-items: center;
 
+        >section{
+            @include flexDir(column,0,3vh);
+            align-items: center;
+
+            >span{
+                width: 45%;
+                height: 3px;
+                background-color: $defaultOrange;
+            }
+        }
+
+        h3{
+            font-size: $fontSizeH3Mob;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        > article{
+            @include flexCol;
+            row-gap: 10vh;
+            width: 95%;
+            
+            >article{
+                @include flexDir(column,0,5vh);
+            }
+            
+            aside{
+                @include flexDir(column,0,3vh);
+                width: 100%;
+            }
+        }
+
+        h4{
+            font-size: $fontSizeH4Mob;
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+
+        p{
+            color: $defaultGray;
+            line-height: 1.5;
+            font-size: $fontSizePMob;
+        }
+
+        h1{
+            @include aboutBar;
+
+            > span{ 
+                @include aboutSpan;
+                width: 90%
+            }
+        }
+
+        h2{
+            @include aboutBar;
+            >span{
+                @include aboutSpan;
+                width: 75%
+            }
+        }
+
+        h5{
+            @include aboutBar;
+            >span{
+                @include aboutSpan;
+                width: 85%;
+            }
+        }
+
+        h6{
+            @include aboutBar;
+            >span{
+                @include aboutSpan;
+                width: 95%;
+            }
+        }
+
+        >aside{
+            @include flexDir(column,0,5vh);
+            width: 70vh;
+
+            >section{
+                background-color: $bgfigcap;
+                border: 1px solid $defaultGray;
+            }
+
+            article{
+                padding: 5%;
+                @include flexDir(column,0,3vh);
+            }
+
+            h5{
+                color: $defaultOrange;
+                font-size: $fontSizeH4Mob;
+                text-transform: capitalize;
+                font-weight: 500;
+            }
+        }
+
+        figure > section{
+            display: none;
+        }
+
+        figure{
+            width: 100%;
+            height: 60vh;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        small{
+            color: $defaultLightGray;
+            text-transform: capitalize;
+            font-weight: 300;
+            font-size: $fontSizePMob;
+        }
     }
 }

@@ -36,3 +36,22 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@mixin aboutBar{
+    width: 100%;
+    background-color: $bgfigcap;
+    height: 5vh;
+    display: flex;
+}
+
+@mixin aboutSpan{
+    background-color: $defaultOrange;
+    color: white;
+    font-size: 14px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    text-transform: uppercase;
+}
