@@ -29,3 +29,10 @@
     row-gap: $row;
     column-gap: $column;
 }
+
+@mixin bgImg($url){
+    background-image: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

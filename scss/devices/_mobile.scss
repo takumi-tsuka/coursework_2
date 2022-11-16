@@ -85,9 +85,7 @@
     }
 
     header{
-        background-image: url(/img/header-bg.jpg);
-        background-position: center;
-        background-repeat: no-repeat;background-size: cover;
+       @include bgImg ("/img/header-bg.jpg");
         height: 25vh;
         width: 100%;
 
@@ -168,5 +166,53 @@
            font-size: $fontSizePMob;
         }
     
+    }
+
+    .portfolio{
+        background-color: $bgPortfolio;
+        @include flexDir(column,0,10vh);
+        padding-top: 13vh;
+        padding-bottom: 10vh;
+        align-items: center;
+
+        >section{
+            @include flexDir(column,0,3vh);
+            align-items: center;
+
+            >span{
+                width: 45%;
+                height: 3px;
+                background-color: $defaultOrange;
+            }
+        }
+
+        h3{
+            font-size: $fontSizeH3Mob;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        > article{
+            @include flexDir(column,0,4vh);
+            width: 95%;
+        }
+
+        figure{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        img{
+            width: 50vh;
+            height: 35vh;
+        }
+
+        aside{
+            display: none;
+        }
+
+
     }
 }
