@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-@mixin flexElement(
+@mixin flexDir(
     $derection,
     $column,
     $row
@@ -14,7 +14,7 @@
     row-gap: $row;
 }
 
-@mixin flexContent(
+@mixin flexAll(
     $derection: column,
     $justify:center,
     $align:center,

@@ -2,14 +2,14 @@
     nav{
 
         > section:first-child{
-            @include flexContent(column,center,center,1vh,0);
+            @include flexAll(column,center,center,1vh,0);
             background-color: $defaultOrange;
             padding-top: 5%;
             padding-bottom: 3%;
             font-size: $fontSizePMob;
         }
         article{
-            @include flexElement(row,5vh,0);
+            @include flexDir(row,5vh,0);
 
             >a{
                 color:white;
@@ -24,14 +24,14 @@
         }
         aside{
             width: 100%;
-            @include flexContent(row,center,center,0,5vh);
+            @include flexAll(row,center,center,0,5vh);
 
             a{
                 border: 1px solid white;
                 border-radius: 50%;
                 height: 5vh;
                 width: 5vh;
-                @include flexContent;
+                @include flexAll(row,center,center);
                 text-decoration: none;
             }
 
@@ -44,7 +44,7 @@
         > section:last-child{
             position: relative;
             padding: 3%;
-            @include flexContent(row,space-between);
+            @include flexAll(row,space-between);
 
             h1{
                 font-size: $fontSizeH1Mob;
@@ -80,6 +80,31 @@
         }
         summary{
             font-size: 32px;
+        }
+    }
+
+    header{
+        background-image: url(/img/header-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;background-size: cover;
+        height: 25vh;
+        width: 100%;
+
+        > section{
+            background-color: rgba(50,50,50,.2);
+            height: 100%;
+        }
+
+        h2{
+            display: none;
+        }
+
+        span{
+            display: none;
+        }
+
+        p{
+            display: none;
         }
     }
 }
