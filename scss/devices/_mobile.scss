@@ -299,11 +299,12 @@
 
         >aside{
             @include flexDir(column,0,5vh);
-            width: 70vh;
+            align-items: center;
 
             >section{
                 background-color: $bgfigcap;
-                border: 1px solid $defaultGray;
+                border: 1px solid $defaultLightGray;
+                width: 95%;
             }
 
             article{
@@ -337,6 +338,116 @@
             color: $defaultLightGray;
             text-transform: capitalize;
             font-weight: 300;
+            font-size: $fontSizePMob;
+        }
+    }
+
+    .contact{
+        @include flexDir(column,0,10vh);
+        align-items:center;
+        padding-top: 13vh;
+        padding-bottom: 10vh;
+
+        >section:first-child{
+            @include flexDir(column,0,3vh);
+            align-items: center;
+
+            >span{
+                width: 45%;
+                height: 3px;
+                background-color: $defaultOrange;
+            }
+        }
+
+        h3{
+            font-size: $fontSizeH3Mob;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        
+        h4{
+            font-size: $fontSizeH4Mob;
+            font-weight: 500;
+        }
+
+        >section:last-child{
+            @include flexDir(column,0,10vh);
+            align-items: center;
+        }
+
+        article{
+            width: 95%;
+            @include flexDir(column,0,5vh);
+        }    
+
+        form{
+            @include flexDir(column,0,3vh);
+        }
+        
+        label{
+            color: $defaultGray;
+            font-size: $fontSizePMob;
+            text-transform: capitalize;
+            font-weight: 300;
+        }
+
+        input{
+            height: 6vh;
+            border: 1px solid $defaultLightGray;
+        }
+
+        textarea{
+            height: 20vh;
+        }
+
+
+        aside{
+            @include flexDir(column,0,1vh);
+        }
+
+        [type="submit"]{
+            background-color: $defaultOrange;
+            border: none;
+            color:white;
+            width: 35%;
+            text-transform: uppercase;
+            font-size: 14px;
+            height: 7vh;
+            text-align: center;
+        }
+        
+        iframe{
+            height: 50vh;
+            border: 10px solid whitesmoke;
+            outline: 1px solid $defaultLightGray;
+        }
+
+        p{
+            color:
+            $defaultGray;
+            line-height: 1.5;
+            font-size: $fontSizePMob;
+        }
+        
+        a{
+            display: flex;
+            column-gap: 3vh;
+            text-decoration: none;
+            color: $defaultGray;
+            font-size: $fontSizePMob;
+        }
+
+        i{
+            color: $defaultOrange;
+            font-size: 14px;
+        }
+
+
+        address{
+            display: flex;
+            column-gap: 3vh;
+            color:$defaultGray;
+            font-style: normal;
             font-size: $fontSizePMob;
         }
     }
