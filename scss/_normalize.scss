@@ -13,7 +13,7 @@ nav,
 header > section,
 main,
 main > section{
-   @include flexColumn;
+   @include flexCol;
 }
 
 h1{
