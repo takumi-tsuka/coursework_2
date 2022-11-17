@@ -17,13 +17,12 @@
                 font-size: 14px;
             }
         
-            i{
-                font-size: 14px;
-            }
         }
 
         aside{
             width: 40%;
+            padding-right: 5%;
+            column-gap: 2vh;
             
             a{
                 height: 6vh;
@@ -73,6 +72,26 @@
             color: white;
             width: 65%;
             text-align: center;
+        }
+    }
+
+    .services{
+        padding-bottom: 13vh;
+        h3{
+            font-size: $fontSizeH3Tab;
+            font-weight: 300;
+        }
+
+        > article{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 5vh;
+            width: 90%;
+        }
+
+        aside{
+            width: 45%;
         }
     }
 }
