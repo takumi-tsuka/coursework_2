@@ -15,10 +15,13 @@
                 color:white;
                 text-decoration: none;
                 font-weight: 300;
+                display: flex;
+                align-items: center;
             }
 
             i{
                 padding-right: 2vh;
+                font-size: 14px;
             }
 
         }
@@ -72,6 +75,7 @@
                 padding: 2%;
                 list-style-type: none;
                 border-bottom: 1px solid sienna;
+                width: 100%;
             }
             a{
                 text-decoration: none;
@@ -488,4 +492,42 @@
             font-size: $fontSizePMob;
         }
     }
+
+    .faq{
+        @include flexDir(column,0,10vh);
+        padding-top: 13vh;
+        padding-bottom: 10vh;
+        align-items: center;
+
+        >section:first-child{
+            @include flexDir(column,0,3vh);
+            align-items: center;
+
+            >span{
+                width: 8vh;
+                height: 3px;
+                background-color: $defaultOrange;
+            }
+        }
+
+        h3{
+            font-size: $fontSizeH3Mob;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+
+    .accordion{
+        width: 95%;
+
+        p{
+            font-size: $fontSizePMob;
+            line-height: 1.5;
+        }
+
+        button{
+            font-weight: 300;
+        }
+    }
+
 }
