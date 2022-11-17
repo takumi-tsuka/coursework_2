@@ -46,4 +46,33 @@
             font-size: 24px;
         }
     }
+
+    header{
+        height: 38vh;
+
+        > section{
+            height: 100%;
+            @include flexAll(column,center,center,1vh,0);
+        }
+
+        h2{
+            display: block;
+            color: white;
+            text-transform: uppercase;
+            font-size: $fontSizeH2Tab;
+        }
+
+        span{
+            display: block;
+            color: rgba(255, 255, 255, 0.514);
+            font-size:30px;
+        }
+
+        p{
+            display: block;
+            color: white;
+            width: 65%;
+            text-align: center;
+        }
+    }
 }
