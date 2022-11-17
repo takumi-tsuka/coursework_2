@@ -1,0 +1,49 @@
+@media(min-width:$minWidthTab){
+    nav{
+        > section:first-child{
+            flex-direction: row;
+            justify-content: space-evenly;
+            // border: 1px solid red;
+            padding-top: 2%;
+            padding-bottom: 1%;
+        }
+
+        article{
+            // border: 1px solid red;
+            padding-left: 5%;
+            width: 50%;
+
+            a{
+                font-size: 14px;
+            }
+        
+            i{
+                font-size: 14px;
+            }
+        }
+
+        aside{
+            width: 40%;
+            
+            a{
+                height: 6vh;
+                width: 6vh;
+            }
+
+            i{
+                font-size: 16px;
+            }
+        }
+
+        >section:last-child{
+            h1{
+                font-size: $fontSizeH1Tab;
+            }
+
+        }
+
+        summary{
+            font-size: 24px;
+        }
+    }
+}
