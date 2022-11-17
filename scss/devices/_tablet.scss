@@ -93,5 +93,35 @@
         aside{
             width: 45%;
         }
+
+        p{
+            font-size: $fontSizePTab;
+        }
+    }
+
+    .portfolio{
+        h3{
+            font-size: $fontSizeH3Tab;
+            font-weight: 300;
+        }
+
+        > article{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 1vh;
+            column-gap: 2vh;
+            width: 90%;
+
+        }
+
+        figure{
+            width: 45%;
+        }
+
+        img{
+            height: 30vh;
+        }
+
     }
 }
