@@ -71,4 +71,24 @@
             display: none;
         }
     }
+
+    header{
+        height: 50vh;
+
+
+        h2{
+            font-size: $fontSizeH2Des;
+        }
+
+        span{
+            font-size: 40px;
+        }
+
+        p{
+            width: 50%;
+        }
+
+
+    }
+
 }
