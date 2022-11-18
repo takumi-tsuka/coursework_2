@@ -124,4 +124,65 @@
         }
 
     }
+
+    .about{
+        h3{
+            font-size: $fontSizeH3Tab;
+        }
+
+        >section{
+            span{
+                width: 60%;
+            }
+        }
+
+        >article{
+            width: 90%;
+            flex-direction: row;
+            justify-content: space-between;
+
+            > article{
+                width: 45%;
+                row-gap: 3vh;
+            }
+
+            >article:last-child{
+                padding-top: 8%;
+            }
+
+            aside{
+                justify-content: space-between;
+            }
+        }
+
+        h4{
+            font-size:  $fontSizeH4Tab;
+            font-weight: 300;
+        }
+
+        p{
+            font-size: $fontSizePTab
+        }
+
+        >aside{
+            width: 90%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 1vh;
+            justify-content: space-between;
+            
+            >section{
+                width: 48%;
+            }
+
+            h5{
+                font-size: $fontSizeH4Tab;
+            }
+        }
+
+        small{
+            font-size: $fontSizePTab;
+        }
+
+    }
 }
