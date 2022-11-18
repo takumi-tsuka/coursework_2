@@ -75,6 +75,29 @@
         }
     }
 
+    footer{
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        flex-direction: row;
+        align-items: center;
+        
+        p{
+            font-size: $fontSizePTab;
+        }
+
+        >p{
+            padding-left: 5%;
+        }
+
+        aside{
+            width: 30%;
+        }
+
+        i{
+            font-size: $fontSizePTab;
+        }
+    }
+
     .services{
         padding-bottom: 13vh;
         h3{
@@ -247,4 +270,10 @@
             font-size: $fontSizePTab;
         }
     }
+
+    .accordion{
+        width: 90%;
+    }
+
+
 }
