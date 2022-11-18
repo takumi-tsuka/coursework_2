@@ -168,11 +168,10 @@
             width: 90%;
             flex-direction: row;
             flex-wrap: wrap;
-            column-gap: 1vh;
             justify-content: space-between;
             
             >section{
-                width: 48%;
+                width: 40vh;
             }
 
             h5{
@@ -184,5 +183,68 @@
             font-size: $fontSizePTab;
         }
 
+    }
+
+    .contact{
+
+        h3{
+            font-size: $fontSizeH3Tab;
+            font-weight: 300;
+        }
+
+        h4{
+            font-size: $fontSizeH4Tab;
+        }
+        >section:last-child{
+            flex-direction: row;
+            width: 90%;
+            justify-content: space-between;
+
+        }
+
+        >section {
+            article{
+                width: 48%;
+                row-gap: 4vh;
+            }
+        }
+
+        label{
+            font-size: $fontSizePTab;
+        }
+
+        iframe{
+            height: 35vh;
+        }
+
+        p,
+        address,
+        a{
+            font-size: $fontSizePTab;
+        }
+
+        address,
+        a{
+            align-items: center;
+            
+        }
+
+        [type="submit"]{
+            height: 5vh;
+        }
+
+
+
+    }
+
+    .faq{
+        h3{
+            font-size: $fontSizeH3Tab;
+            font-weight: 300;
+        }    
+        
+        p{
+            font-size: $fontSizePTab;
+        }
     }
 }
