@@ -1,0 +1,74 @@
+@media(min-width:$minWidthDes){
+    nav{
+
+        >section:first-child{
+           padding-top: 1%;
+        }
+
+        article{
+            padding: 0;
+            width: 50%;
+            
+            >a{
+                font-size: $fontSizePDes;
+            }
+        }
+
+        aside{
+            width: 20%;
+            padding: 0;
+
+            a{
+                height: 5vh;
+                width: 5vh;
+            }
+        }
+
+        >section:last-child{
+                align-items: center;
+
+            h1{
+                font-size: $fontSizeH1Des;
+                padding-left: 7%;
+            }
+
+            >ul{
+                display: flex;
+                justify-content: space-between;
+                // border: 1px solid red;
+                width: 51%;
+                align-items: center;
+                padding-right: 10%;
+            }
+            
+            li{
+                display: flex;
+                width: 16%;
+                justify-content: center;
+
+            }
+            
+            a{
+                text-align: center;
+                border-radius: 5px;
+                width: 100%;
+                padding: 5%;
+                text-decoration: none;
+                color: black;
+                font-weight: 300;
+                font-size: $fontSizePDes;
+                transition: .4s;
+
+                &:hover{
+                    background-color: $defaultOrange;
+                    color: white;
+                }
+            }
+        }
+
+
+        details{
+            display: none;
+        }
+    }
+}
