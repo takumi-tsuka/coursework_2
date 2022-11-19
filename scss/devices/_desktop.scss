@@ -125,7 +125,7 @@
         figure{
             width: 22%;
             position: relative;
-
+            
             &:hover aside{
                 position: absolute;
                 background-color: rgba(226,134,60,.9);
@@ -133,6 +133,7 @@
                 height: 100%;
                 width: 100%;
                 padding-bottom: 8%;
+                transition: .4s;
             }
         }
 
@@ -150,6 +151,46 @@
         a{
             text-decoration: none;
             font-size: 18px;
+        }
+    }
+
+    .about{
+        h4{
+            font-size: $fontSizeH4Des;
+        }
+
+        >article {
+            width: 80%;
+
+            >article:first-child{
+                width: 65%;
+            }
+
+            >article:last-child{
+                padding-top: 0;
+                width: 32%;
+            }
+        }
+
+        p{
+            font-size: $fontSizePDes
+        }
+
+        > aside{
+            width: 80%;
+
+            >section{
+                width: 47vh;
+            }
+
+            h5{
+                font-size: $fontSizeH4Des;
+            }
+        }
+
+        small{
+            font-size: $fontSizePDes;
+
         }
     }
 }
