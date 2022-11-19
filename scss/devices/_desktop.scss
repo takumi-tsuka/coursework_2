@@ -190,7 +190,89 @@
 
         small{
             font-size: $fontSizePDes;
+        }
 
+        figure{
+            position: relative;
+        }
+
+        img{
+            position: absolute;
         }
     }
+
+    .team{
+        &:hover{
+            section{
+                background-color: rgba(50,50,50,.6);
+                    display: flex;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+            }
+        }
+
+        figcaption{
+            display: flex;
+        }
+
+        a{
+            height: 6vh;
+            width: 6vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $defaultGray;
+            text-decoration: none;
+            color: white;
+            border-right: 1px solid $bgPortfolio;
+            border-bottom: 1px solid $bgPortfolio;
+        }
+
+        i{
+            font-size: 20px;
+        }
+    }
+
+    .contact{
+       
+        h4{
+            font-size: $fontSizeH4Tab;
+        }
+
+        >section:last-child{
+            width: 80%;
+            column-gap: 3vh;
+        }
+
+        article:first-child{
+            width: 65%;
+        }
+
+        article:last-child{
+            width: 35%;
+        }
+
+        label,
+        p,
+        a{
+            font-size: $fontSizePDes;
+        }
+
+        [type="submit"]{
+            width: 20%;
+            &:hover{
+                background-color: $bgPortfolio;
+                color: white;
+                transition: .4s;
+            }
+        }
+
+
+
+
+
+    }
+    
+
 }
