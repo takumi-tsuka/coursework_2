@@ -273,6 +273,20 @@
 
 
     }
-    
+
+    .faq{
+        h3{
+            font-size: $fontSizeH3Des;
+        }
+
+        p{
+            font-size: $fontSizePDes;
+        }
+    }
+
+    .accordion{
+        width: 80%;
+    }
+
 
 }
