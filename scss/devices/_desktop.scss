@@ -21,6 +21,15 @@
             a{
                 height: 5vh;
                 width: 5vh;
+
+                &:hover{
+                    background-color: white;
+                    transition: .4s;
+                    
+                    i{
+                        color: $defaultOrange;
+                    }
+                }
             }
         }
 
@@ -89,6 +98,16 @@
         }
 
 
+    }
+
+    .services{
+
+        aside{
+            width: 20%;
+        }
+        h4{
+            font-size: $fontSizeH4Des;
+        }
     }
 
 }
