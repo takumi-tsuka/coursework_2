@@ -92,6 +92,20 @@
 
     }
 
+    footer{
+        p{
+            font-size: $fontSizePDes;
+        }
+
+        >p{
+            padding-left: 10%;
+        }
+
+        i{
+            font-size: $fontSizePDes;
+        }
+    }
+
     .sns{
         &:hover{
             background-color: white;
@@ -287,6 +301,4 @@
     .accordion{
         width: 80%;
     }
-
-
 }
