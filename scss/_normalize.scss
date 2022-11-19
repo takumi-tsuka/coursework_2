@@ -3,3 +3,57 @@
     padding: 0;
     font-family: $defaultFont;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+nav,
+header > section,
+main,
+main > section{
+   @include flexCol;
+}
+
+h1{
+    color: $defaultOrange;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+details > ul,
+ul{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+}
+
+
+details{
+    color: $defaultOrange;
+}
+
+code{
+    background-color: rgb(250, 241, 244);
+    border-radius: 3px;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: $defaulyLightOrange;
+    color: black;
+}
+
+.accordion{
+    --bs-accordion-btn-focus-box-shadow: none;
+}

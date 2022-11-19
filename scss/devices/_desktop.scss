@@ -1,0 +1,304 @@
+@media(min-width:$minWidthDes){
+    nav{
+
+        >section:first-child{
+           padding-top: 1%;
+        }
+
+        article{
+            padding: 0;
+            width: 50%;
+            
+            >a{
+                font-size: $fontSizePDes;
+            }
+        }
+
+        aside{
+            width: 20%;
+            padding: 0;
+
+            a{
+                height: 5vh;
+                width: 5vh;
+
+            }
+        }
+
+        >section:last-child{
+                align-items: center;
+
+            h1{
+                font-size: $fontSizeH1Des;
+                padding-left: 7%;
+            }
+
+            >ul{
+                display: flex;
+                justify-content: space-between;
+                // border: 1px solid red;
+                width: 51%;
+                align-items: center;
+                padding-right: 10%;
+            }
+            
+            li{
+                display: flex;
+                width: 16%;
+                justify-content: center;
+
+            }
+            
+            a{
+                text-align: center;
+                border-radius: 5px;
+                width: 100%;
+                padding: 5%;
+                text-decoration: none;
+                color: black;
+                font-weight: 300;
+                font-size: $fontSizePDes;
+                transition: .4s;
+
+                &:hover{
+                    background-color: $defaultOrange;
+                    color: white;
+                }
+            }
+        }
+
+
+        details{
+            display: none;
+        }
+    }
+
+    header{
+        height: 50vh;
+
+
+        h2{
+            font-size: $fontSizeH2Des;
+        }
+
+        span{
+            font-size: 40px;
+        }
+
+        p{
+            width: 50%;
+        }
+
+
+    }
+
+    footer{
+        p{
+            font-size: $fontSizePDes;
+        }
+
+        >p{
+            padding-left: 10%;
+        }
+
+        i{
+            font-size: $fontSizePDes;
+        }
+    }
+
+    .sns{
+        &:hover{
+            background-color: white;
+            transition: .4s;
+
+            i{
+                color: $defaultOrange;
+            }
+        }
+    }
+
+    .services{
+
+        aside{
+            width: 20%;
+        }
+        h4{
+            font-size: $fontSizeH4Des;
+        }
+    }
+
+    .portfolio{
+
+        >article{
+            width: 80%;
+            justify-content: space-between;
+            column-gap: 4vh;
+            row-gap: 4vh;
+        }
+
+        figure{
+            width: 22%;
+            position: relative;
+            
+            &:hover aside{
+                position: absolute;
+                background-color: rgba(226,134,60,.9);
+                @include flexAll(column,flex-end,center,1vh,0);
+                height: 100%;
+                width: 100%;
+                padding-bottom: 8%;
+                transition: .4s;
+            }
+        }
+
+        img{
+            width: 100%;
+            height: 20vh;
+        }
+
+        p,
+        a{
+            color: white;
+            font-weight: 300;
+        }
+        
+        a{
+            text-decoration: none;
+            font-size: 18px;
+        }
+    }
+
+    .about{
+        h4{
+            font-size: $fontSizeH4Des;
+        }
+
+        >article {
+            width: 80%;
+
+            >article:first-child{
+                width: 65%;
+            }
+
+            >article:last-child{
+                padding-top: 0;
+                width: 32%;
+            }
+        }
+
+        p{
+            font-size: $fontSizePDes
+        }
+
+        > aside{
+            width: 80%;
+
+            >section{
+                width: 47vh;
+            }
+
+            h5{
+                font-size: $fontSizeH4Des;
+            }
+        }
+
+        small{
+            font-size: $fontSizePDes;
+        }
+
+        figure{
+            position: relative;
+        }
+
+        img{
+            position: absolute;
+        }
+    }
+
+    .team{
+        &:hover{
+            section{
+                background-color: rgba(50,50,50,.6);
+                    display: flex;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+            }
+        }
+
+        figcaption{
+            display: flex;
+        }
+
+        a{
+            height: 6vh;
+            width: 6vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $defaultGray;
+            text-decoration: none;
+            color: white;
+            border-right: 1px solid $bgPortfolio;
+            border-bottom: 1px solid $bgPortfolio;
+        }
+
+        i{
+            font-size: 20px;
+        }
+    }
+
+    .contact{
+       
+        h4{
+            font-size: $fontSizeH4Tab;
+        }
+
+        >section:last-child{
+            width: 80%;
+            column-gap: 3vh;
+        }
+
+        article:first-child{
+            width: 65%;
+        }
+
+        article:last-child{
+            width: 35%;
+        }
+
+        label,
+        p,
+        a{
+            font-size: $fontSizePDes;
+        }
+
+        [type="submit"]{
+            width: 20%;
+            &:hover{
+                background-color: $bgPortfolio;
+                color: white;
+                transition: .4s;
+            }
+        }
+
+
+
+
+
+    }
+
+    .faq{
+        h3{
+            font-size: $fontSizeH3Des;
+        }
+
+        p{
+            font-size: $fontSizePDes;
+        }
+    }
+
+    .accordion{
+        width: 80%;
+    }
+}

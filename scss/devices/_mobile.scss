@@ -1,0 +1,534 @@
+@media(min-width: $minWidthMob){
+    nav{
+
+        > section:first-child{
+            @include flexAll(column,center,center,1vh,0);
+            background-color: $defaultOrange;
+            padding-top: 5%;
+            padding-bottom: 3%;
+            font-size: $fontSizePMob;
+        }
+        article{
+            @include flexDir(row,5vh,0);
+
+            >a{
+                color:white;
+                text-decoration: none;
+                font-weight: 300;
+                display: flex;
+                align-items: center;
+            }
+
+            i{
+                padding-right: 2vh;
+                font-size: 14px;
+            }
+
+        }
+
+        aside{
+            width: 100%;
+            @include flexAll(row,center,center,0,5vh);
+
+            a{
+                border: 1px solid white;
+                border-radius: 50%;
+                height: 7vh;
+                width: 7vh;
+                @include flexAll(row,center,center);
+                text-decoration: none;
+            }
+
+            i{
+                color: white;
+                font-size: 18px;
+            }
+
+        }
+        > section:last-child{
+            position: relative;
+            padding: 3%;
+            @include flexAll(row,space-between);
+
+            h1{
+                font-size: $fontSizeH1Mob;
+            }
+
+            >ul{
+                display: none;
+            }
+        }
+        details{
+            position: absolute;
+            width: 94%;
+            text-align: right;
+
+            >ul{
+                position: absolute;
+                width: 100%;
+                text-align: left;
+                background-color: white;
+                background-color: $defaultOrange;
+                margin-top: 4%;
+            }
+
+            li{
+                padding: 2%;
+                list-style-type: none;
+                border-bottom: 1px solid sienna;
+                width: 100%;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                font-weight: 300;
+            }
+        }
+        summary{
+            font-size: 28px;
+        }
+    }
+
+    header{
+       @include bgImg ("/img/header-bg.jpg");
+        height: 25vh;
+        width: 100%;
+
+        > section{
+            background-color: rgba(50,50,50,.2);
+            height: 100%;
+        }
+
+        h2{
+            display: none;
+        }
+
+        span{
+            display: none;
+        }
+
+        p{
+            display: none;
+        }
+    }
+
+    footer{
+        background-color: $defaultOrange;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        @include flexCol;
+        align-items: flex-end;
+
+        p{
+            color: white;
+            font-size: $fontSizePMob;
+        }
+
+        > aside{
+            @include flexDir(column,0,1vh);
+            align-items: center;
+            padding-right: 3%;
+
+            >p{
+                text-transform: uppercase;
+            }
+        }
+
+        a{
+            color:white;
+        }
+
+        >p{
+            width: 96%;
+            padding-left: 2%;
+        }
+        
+        i{
+            font-size: $fontSizePMob;
+        }
+
+    }
+
+    .services{
+        @include flexDir(column,0,10vh);
+        align-items: center;
+        padding-top: 14vh;
+        padding-bottom: 10vh;
+
+        >section{
+            @include flexDir(column,0,3vh);
+            align-items: center;
+
+            >span{
+                width: 45%;
+                height: 3px;
+                background-color: $defaultOrange;
+            }
+        }
+
+        h3{
+            font-size: $fontSizeH3Mob;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        > article{
+            @include flexDir(column,0,7vh);
+            width: 95%;
+        }
+
+        aside{
+            @include flexDir(column,0,3vh);
+            
+            >section{
+                @include flexDir(row,3vh,0);
+                align-items: center;
+            }
+
+            span{
+                color: $defaultBlue;
+            }
+        }
+        
+        h4{
+            font-size: $fontSizeH4Mob;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        
+        i{
+            color: $defaultOrange;
+            font-size: 24px;
+        }
+        
+        p{
+           line-height: 1.5;
+           color: $defaultGray;
+           font-weight: 300;
+           font-size: $fontSizePMob;
+        }
+    
+    }
+
+    .portfolio{
+        background-color: $bgPortfolio;
+        @include flexDir(column,0,10vh);
+        padding-top: 13vh;
+        padding-bottom: 10vh;
+        align-items: center;
+
+        >section{
+            @include flexDir(column,0,3vh);
+            align-items: center;
+
+            >span{
+                width: 45%;
+                height: 3px;
+                background-color: $defaultOrange;
+            }
+        }
+
+        h3{
+            font-size: $fontSizeH3Mob;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        > article{
+            @include flexDir(column,0,4vh);
+            width: 95%;
+        }
+
+        figure{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        img{
+            width: 40vh;
+            height: 35vh;
+        }
+
+        aside{
+            display: none;
+        }
+    }
+
+    .about{
+        @include flexDir(column,0,10vh);
+        padding-top: 13vh;
+        padding-bottom: 10vh;
+        align-items: center;
+
+        >section{
+            @include flexDir(column,0,3vh);
+            align-items: center;
+
+            >span{
+                width: 45%;
+                height: 3px;
+                background-color: $defaultOrange;
+            }
+        }
+
+        h3{
+            font-size: $fontSizeH3Mob;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        > article{
+            @include flexCol;
+            row-gap: 10vh;
+            width: 95%;
+            
+            >article{
+                @include flexDir(column,0,5vh);
+            }
+            
+            aside{
+                @include flexDir(column,0,3vh);
+                width: 100%;
+            }
+        }
+
+        h4{
+            font-size: $fontSizeH4Mob;
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+
+        p{
+            color: $defaultGray;
+            line-height: 1.5;
+            font-size: $fontSizePMob;
+        }
+
+        h1{
+            @include aboutBar;
+
+            > span{ 
+                @include aboutSpan;
+                width: 90%
+            }
+        }
+
+        h2{
+            @include aboutBar;
+            >span{
+                @include aboutSpan;
+                width: 75%
+            }
+        }
+
+        h5{
+            @include aboutBar;
+            >span{
+                @include aboutSpan;
+                width: 85%;
+            }
+        }
+
+        h6{
+            @include aboutBar;
+            >span{
+                @include aboutSpan;
+                width: 95%;
+            }
+        }
+
+        >aside{
+            @include flexDir(column,0,5vh);
+            align-items: center;
+
+            >section{
+                background-color: $bgfigcap;
+                border: 1px solid $defaultLightGray;
+                width: 40vh;
+            }
+
+            article{
+                padding: 5%;
+                @include flexDir(column,0,3vh);
+            }
+
+            h5{
+                color: $defaultOrange;
+                font-size: $fontSizeH4Mob;
+                text-transform: capitalize;
+                font-weight: 500;
+            }
+        }
+
+        figure > section{
+            display: none;
+        }
+
+        figure{
+            width: 100%;
+            height: 40vh;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        small{
+            color: $defaultLightGray;
+            text-transform: capitalize;
+            font-weight: 300;
+            font-size: $fontSizePMob;
+        }
+    }
+
+    .contact{
+        @include flexDir(column,0,10vh);
+        align-items:center;
+        padding-top: 13vh;
+        padding-bottom: 10vh;
+
+        >section:first-child{
+            @include flexDir(column,0,3vh);
+            align-items: center;
+
+            >span{
+                width: 45%;
+                height: 3px;
+                background-color: $defaultOrange;
+            }
+        }
+
+        h3{
+            font-size: $fontSizeH3Mob;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        
+        h4{
+            font-size: $fontSizeH4Mob;
+            font-weight: 500;
+        }
+
+        >section:last-child{
+            @include flexDir(column,0,10vh);
+            align-items: center;
+        }
+
+        article{
+            width: 95%;
+            @include flexDir(column,0,5vh);
+        }    
+
+        form{
+            @include flexDir(column,0,3vh);
+        }
+        
+        label{
+            color: $defaultGray;
+            font-size: $fontSizePMob;
+            text-transform: capitalize;
+            font-weight: 300;
+        }
+
+        input{
+            height: 6vh;
+            border: 1px solid $defaultLightGray;
+        }
+
+        textarea{
+            height: 20vh;
+        }
+
+
+        aside{
+            @include flexDir(column,0,1vh);
+        }
+
+        [type="submit"]{
+            background-color: $defaultOrange;
+            border: none;
+            color:white;
+            width: 35%;
+            text-transform: uppercase;
+            font-size: 14px;
+            height: 7vh;
+            text-align: center;
+        }
+        
+        iframe{
+            height: 50vh;
+            border: 10px solid whitesmoke;
+            outline: 1px solid $defaultLightGray;
+        }
+
+        p{
+            color:
+            $defaultGray;
+            line-height: 1.5;
+            font-size: $fontSizePMob;
+        }
+        
+        a{
+            display: flex;
+            column-gap: 3vh;
+            text-decoration: none;
+            color: $defaultGray;
+            font-size: $fontSizePMob;
+        }
+
+        i{
+            color: $defaultOrange;
+            font-size: 14px;
+        }
+
+
+        address{
+            display: flex;
+            column-gap: 3vh;
+            color:$defaultGray;
+            font-style: normal;
+            font-size: $fontSizePMob;
+        }
+    }
+
+    .faq{
+        @include flexDir(column,0,10vh);
+        padding-top: 13vh;
+        padding-bottom: 10vh;
+        align-items: center;
+
+        >section:first-child{
+            @include flexDir(column,0,3vh);
+            align-items: center;
+
+            >span{
+                width: 8vh;
+                height: 3px;
+                background-color: $defaultOrange;
+            }
+        }
+
+        h3{
+            font-size: $fontSizeH3Mob;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+
+    .accordion{
+        width: 95%;
+
+        p{
+            font-size: $fontSizePMob;
+            line-height: 1.5;
+        }
+
+        button{
+            font-weight: 300;
+        }
+    }
+
+}

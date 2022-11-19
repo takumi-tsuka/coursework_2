@@ -1,0 +1,57 @@
+@mixin flexCol{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexDir(
+    $derection,
+    $column,
+    $row
+){
+    display: flex;
+    flex-direction: $derection;
+    column-gap: $column;
+    row-gap: $row;
+}
+
+@mixin flexAll(
+    $derection: column,
+    $justify:center,
+    $align:center,
+    $row:0,
+    $column:0,
+)
+{
+    display: flex;
+    flex-direction: $derection;
+    justify-content: $justify;
+    align-items: $align;
+    row-gap: $row;
+    column-gap: $column;
+}
+
+@mixin bgImg($url){
+    background-image: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin aboutBar{
+    width: 100%;
+    background-color: $bgfigcap;
+    height: 5vh;
+    display: flex;
+}
+
+@mixin aboutSpan{
+    background-color: $defaultOrange;
+    color: white;
+    font-size: 14px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    text-transform: uppercase;
+}

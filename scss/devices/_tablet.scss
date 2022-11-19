@@ -1,0 +1,279 @@
+@media(min-width:$minWidthTab){
+    nav{
+        > section:first-child{
+            flex-direction: row;
+            justify-content: space-evenly;
+            // border: 1px solid red;
+            padding-top: 2%;
+            padding-bottom: 1%;
+        }
+
+        article{
+            // border: 1px solid red;
+            padding-left: 5%;
+            width: 50%;
+
+            a{
+                font-size: 14px;
+            }
+        
+        }
+
+        aside{
+            width: 40%;
+            padding-right: 5%;
+            column-gap: 2vh;
+            
+            a{
+                height: 6vh;
+                width: 6vh;
+            }
+
+            i{
+                font-size: 16px;
+            }
+        }
+
+        >section:last-child{
+            h1{
+                font-size: $fontSizeH1Tab;
+            }
+
+        }
+
+        summary{
+            font-size: 24px;
+        }
+    }
+
+    header{
+        height: 38vh;
+
+        > section{
+            height: 100%;
+            @include flexAll(column,center,center,1vh,0);
+        }
+
+        h2{
+            display: block;
+            color: white;
+            text-transform: uppercase;
+            font-size: $fontSizeH2Tab;
+        }
+
+        span{
+            display: block;
+            color: rgba(255, 255, 255, 0.514);
+            font-size:30px;
+        }
+
+        p{
+            display: block;
+            color: white;
+            width: 65%;
+            text-align: center;
+        }
+    }
+
+    footer{
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        flex-direction: row;
+        align-items: center;
+        
+        p{
+            font-size: $fontSizePTab;
+        }
+
+        >p{
+            padding-left: 5%;
+        }
+
+        aside{
+            width: 30%;
+        }
+
+        i{
+            font-size: $fontSizePTab;
+        }
+    }
+
+    .services{
+        padding-bottom: 13vh;
+        h3{
+            font-size: $fontSizeH3Tab;
+            font-weight: 300;
+        }
+
+        > article{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 5vh;
+            width: 90%;
+        }
+
+        aside{
+            width: 45%;
+        }
+
+        p{
+            font-size: $fontSizePTab;
+        }
+    }
+
+    .portfolio{
+        h3{
+            font-size: $fontSizeH3Tab;
+            font-weight: 300;
+        }
+
+        > article{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 1vh;
+            column-gap: 2vh;
+            width: 90%;
+
+        }
+
+        figure{
+            width: 45%;
+        }
+
+        img{
+            height: 30vh;
+        }
+
+    }
+
+    .about{
+        h3{
+            font-size: $fontSizeH3Tab;
+        }
+
+        >section{
+            span{
+                width: 60%;
+            }
+        }
+
+        >article{
+            width: 90%;
+            flex-direction: row;
+            justify-content: space-between;
+
+            > article{
+                width: 45%;
+                row-gap: 3vh;
+            }
+
+            >article:last-child{
+                padding-top: 8%;
+            }
+
+            aside{
+                justify-content: space-between;
+            }
+        }
+
+        h4{
+            font-size:  $fontSizeH4Tab;
+            font-weight: 300;
+        }
+
+        p{
+            font-size: $fontSizePTab
+        }
+
+        >aside{
+            width: 90%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            >section{
+                width: 40vh;
+            }
+
+            h5{
+                font-size: $fontSizeH4Tab;
+            }
+        }
+
+        small{
+            font-size: $fontSizePTab;
+        }
+
+    }
+
+    .contact{
+
+        h3{
+            font-size: $fontSizeH3Tab;
+            font-weight: 300;
+        }
+
+        h4{
+            font-size: $fontSizeH4Tab;
+        }
+        >section:last-child{
+            flex-direction: row;
+            width: 90%;
+            justify-content: space-between;
+
+        }
+
+        >section {
+            article{
+                width: 48%;
+                row-gap: 4vh;
+            }
+        }
+
+        label{
+            font-size: $fontSizePTab;
+        }
+
+        iframe{
+            height: 35vh;
+        }
+
+        p,
+        address,
+        a{
+            font-size: $fontSizePTab;
+        }
+
+        address,
+        a{
+            align-items: center;
+            
+        }
+
+        [type="submit"]{
+            height: 5vh;
+        }
+
+
+
+    }
+
+    .faq{
+        h3{
+            font-size: $fontSizeH3Tab;
+            font-weight: 300;
+        }    
+        
+        p{
+            font-size: $fontSizePTab;
+        }
+    }
+
+    .accordion{
+        width: 90%;
+    }
+
+
+}
