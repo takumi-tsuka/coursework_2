@@ -384,6 +384,12 @@
         }
     }
 
+    .team{
+        figcaption{
+            display: none;
+        }
+    }
+
     .contact{
         @include flexDir(column,0,10vh);
         align-items:center;
@@ -415,6 +421,7 @@
         >section:last-child{
             @include flexDir(column,0,10vh);
             align-items: center;
+            width: 95%;
         }
 
         article{
