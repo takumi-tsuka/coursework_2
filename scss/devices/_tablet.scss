@@ -132,8 +132,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-            row-gap: 1vh;
-            column-gap: 2vh;
+            row-gap: 10vh;
             width: 90%;
 
         }
@@ -208,6 +207,12 @@
 
     }
 
+    .team{
+        figcaption{
+            display: none;
+        }
+    }
+
     .contact{
 
         h3{
@@ -274,6 +279,4 @@
     .accordion{
         width: 90%;
     }
-
-
 }
